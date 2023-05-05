@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+   char str[100];
+    int i, cont = 0;
+
+    printf("Digite uma string: ");
+    scanf("%s", str);
+
+    for (i = 0; str[i] != '\0'; i++) {
+    if (str[i] == 'a' || str[i] == 'b') {
+     cont++;
+    if (str[i] == 'a') {
+    str[i] = 'b';
+    } else {
+    str[i] = 'a';
+    }
+    }
+    }
+
+    printf("Número de caracteres modificados: %d\n", cont);
+    printf("String modificada: %s\n", str);
+
+    return 0;
+}
